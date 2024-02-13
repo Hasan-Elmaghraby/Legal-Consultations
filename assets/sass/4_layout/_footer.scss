@@ -7,12 +7,18 @@
   padding: 20px;
   display: flex;
   justify-content: space-around;
+
+  @include xs {
+    width: 95%;
+  }
+
   @include xxs {
     flex-direction: column;
     row-gap: 30px;
     align-items: unset;
     width: 100%;
   }
+
   align-items: center;
   .contact-block {
     display: flex;
@@ -65,7 +71,7 @@
   z-index: 1;
   &::before {
     position: absolute;
-    content: url("../assets/images/footer/before.png");
+    content: url("../images/footer/before.png");
     top: -18%;
     left: 0;
     z-index: -1;
@@ -75,7 +81,7 @@
   }
   &::after {
     position: absolute;
-    content: url("../assets/images/footer/after.png");
+    content: url("../images/footer/after.png");
     top: -5%;
     right: 0;
     z-index: -1;
