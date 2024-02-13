@@ -65,7 +65,7 @@
   z-index: 1;
   &::before {
     position: absolute;
-    content: url("/assets/images/footer/before.png");
+    content: url("./assets/images/footer/before.png");
     top: -18%;
     left: 0;
     z-index: -1;
@@ -75,7 +75,7 @@
   }
   &::after {
     position: absolute;
-    content: url("/assets/images/footer/after.png");
+    content: url("./assets/images/footer/after.png");
     top: -5%;
     right: 0;
     z-index: -1;
