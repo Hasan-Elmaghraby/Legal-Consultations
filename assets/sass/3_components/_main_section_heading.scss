@@ -25,7 +25,7 @@
   margin: 0;
 
   @include xs {
-    font-size: 1.8rem ;
+    font-size: 1.8rem;
   }
 }
 
@@ -102,8 +102,18 @@
 .section_head_wrapper {
   &.popular_head {
     .section_main_title__ {
-      border-bottom: 2px solid $secondaryColor;
-      padding: 0 10px;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: -5px;
+        left: 50%;
+        width: 80px;
+        height: 2px;
+        background-color: #c69a64;
+        transform: translateX(-50%);
+        background-color: $secondaryColor;
+      }
     }
     .section_sub_title__ {
       font-size: 1.8rem;
